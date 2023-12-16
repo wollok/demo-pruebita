@@ -1,0 +1,15 @@
+import example.*
+
+describe "test para pepita" {
+
+  test "energia inicial de pepita" {
+    const pepita = new Bird()
+    assert.equals(100, pepita.energy())
+  }
+
+  test "energia de pepita baja cuando vuela" {
+    const pepita = new Bird()
+    pepita.fly(10)
+    assert.equals(40, pepita.energy())
+  }
+}
